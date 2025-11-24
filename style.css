@@ -1,44 +1,209 @@
-/* Estilos generales */
+
+/* =========================================
+   ESTILOS GENERALES
+========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0fff0;
-    color: #333;
+    color: #2e2e2e;
     margin: 40px;
+    line-height: 1.6;
 }
 
-/* Encabezado */
+/* =========================================
+   NAVEGACIÓN
+========================================= */
+nav {
+    background-color: #c8e6c9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+nav h2 {
+    margin-bottom: 10px;
+    color: #1b5e20;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 8px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1b5e20;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   ENCABEZADO
+========================================= */
 header {
     text-align: center;
     background-color: #a8e6cf;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
 }
 
 h1 {
-    color: #2e7d32;
+    color: #1b5e20;
+    margin-bottom: 5px;
 }
 
 h2 {
-    color: #388e3c;
+    color: #2e7d32;
+    margin-bottom: 12px;
 }
 
-/* Secciones */
+/* =========================================
+   SECCIONES GENERALES
+========================================= */
 section {
     margin-top: 30px;
-    padding: 15px;
+    padding: 20px;
     background-color: #e8f5e9;
     border-radius: 10px;
 }
 
-/* Pie de página */
+/* =========================================
+   SECCIÓN QUIÉNES SOMOS
+========================================= */
+#quienes-somos h2 {
+    color: #1b5e20;
+    font-size: 28px;
+    border-bottom: 2px solid #66bb6a;
+    padding-bottom: 8px;
+}
+
+#quienes-somos p {
+    font-size: 17px;
+    color: #2e7d32;
+    margin-bottom: 12px;
+}
+
+/* =========================================
+   ACTIVIDADES (LISTA)
+========================================= */
+#actividades ul {
+    padding-left: 25px;
+    color: #1b5e20;
+}
+
+#actividades li {
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+/* =========================================
+   TABLA DE EVENTOS
+========================================= */
+#eventos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#eventos th {
+    background-color: #a5d6a7;
+    padding: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+
+#eventos td {
+    padding: 10px;
+    border: 1px solid #66bb6a;
+}
+
+#eventos tr:nth-child(even) {
+    background-color: #dff4df;
+}
+
+/* =========================================
+   MULTIMEDIA
+========================================= */
+img {
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+audio, video, iframe {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 560px;
+    border-radius: 8px;
+}
+
+/* =========================================
+   FORMULARIOS
+========================================= */
+form {
+    margin-top: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #1b5e20;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    border: 1px solid #66bb6a;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+input[type="submit"]:hover {
+    background-color: #43a047;
+}
+
+/* =========================================
+   PIE DE PÁGINA
+========================================= */
 footer {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
     font-size: 14px;
     color: #555;
 }
 
-/* Negritas */
-b {
+footer hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   DETALLES
+========================================= */
+b, strong {
     color: #1b5e20;
 }
