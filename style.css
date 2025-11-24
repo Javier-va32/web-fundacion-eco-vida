@@ -1,0 +1,44 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0fff0;
+    color: #333;
+    margin: 40px;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    background-color: #a8e6cf;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #2e7d32;
+}
+
+h2 {
+    color: #388e3c;
+}
+
+/* Secciones */
+section {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-radius: 10px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Negritas */
+b {
+    color: #1b5e20;
+}
