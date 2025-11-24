@@ -20,6 +20,7 @@
             <li><a href="#actividades">Actividades Realizadas</a></li>
             <li><a href="#eventos">Próximos Eventos</a></li>
             <li><a href="#temas-interes">Temas de Interés</a></li>
+            <li><a href="#videos-relacionados">Videos Relacionados</a></li>
             <li>
                 <a href="https://es.wikipedia.org/wiki/Cambio_clim%C3%A1tico" target="_blank">
                     Wikipedia: Cambio Climático
@@ -136,12 +137,88 @@
             Tu navegador no soporta audio.
         </audio>
 
-        <!-- Video (opcional, pero recomendado porque la consigna menciona VIDEO explícitamente) -->
-        <h3>Video Educativo</h3>
-        <video controls width="320">
-            <source src="video/cambio-climatico.mp4" type="video/mp4">
-            Tu navegador no soporta video.
-        </video>
+    </section>
+
+    <!-- =========================
+        SECCIÓN: VIDEOS RELACIONADOS
+         ========================= -->
+    <section id="videos-relacionados">
+        <h2>Videos Relacionados</h2>
+
+        <p>Video educativo sobre el cambio climático:</p>
+
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/8Y2LIQJlb7E?si=rz8Wu8oWlLhZbzPQ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+
+    <!-- =========================
+        SECCIÓN: ACCESO
+         ========================= -->
+    <section id="acceso">
+        <h2>Acceso a la Página</h2>
+
+        <form>
+            <label for="usuario">Nombre de Usuario:</label><br>
+            <input type="text" id="usuario" name="usuario" required><br><br>
+
+            <label for="clave">Contraseña:</label><br>
+            <input type="password" id="clave" name="clave" required><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+
+    <!-- =========================
+        SECCIÓN: REGISTRO
+         ========================= -->
+    <section id="registro">
+        <h2>Registro de Nuevos Usuarios</h2>
+
+        <form>
+
+            <label for="nombre">Nombre y Apellido:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="documento">Tipo de Documento:</label><br>
+            <select id="documento" name="documento" required>
+                <option value="dni">DNI</option>
+                <option value="rut">RUT</option>
+                <option value="cedula">Cédula</option>
+                <option value="pasaporte">Pasaporte</option>
+            </select><br><br>
+
+            <label for="numdoc">Número de Documento:</label><br>
+            <input type="number" id="numdoc" name="numdoc" required><br><br>
+
+            <label for="nacimiento">Fecha de Nacimiento:</label><br>
+            <input type="date" id="nacimiento" name="nacimiento" required><br><br>
+
+            <label>Sexo:</label><br>
+            <input type="radio" id="masculino" name="sexo" value="masculino">
+            <label for="masculino">Masculino</label><br>
+
+            <input type="radio" id="femenino" name="sexo" value="femenino">
+            <label for="femenino">Femenino</label><br><br>
+
+            <label for="correo">Correo Electrónico:</label><br>
+            <input type="email" id="correo" name="correo" required><br><br>
+
+            <label for="telefono">Teléfono Móvil:</label><br>
+            <input type="tel" id="telefono" name="telefono" required><br><br>
+
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea><br><br>
+
+            <input type="submit" value="Registrar">
+        </form>
     </section>
 
 
