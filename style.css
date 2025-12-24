@@ -1,209 +1,221 @@
-
-/* =========================================
-   ESTILOS GENERALES
-========================================= */
+/* ================= RESET ================= */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/* ================= BASE ================= */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0fff0;
-    color: #2e2e2e;
-    margin: 40px;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background-color: #f0fff0;
+  line-height: 1.6;
 }
 
-/* =========================================
-   NAVEGACIÓN
-========================================= */
-nav {
-    background-color: #c8e6c9;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 25px;
+/* ================= LAYOUT GENERAL ================= */
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 16px;
 }
 
-nav h2 {
-    margin-bottom: 10px;
-    color: #1b5e20;
+/* ================= MENÚ (FLEXBOX) ================= */
+.menu-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #c8e6c9;
+  padding: 16px;
+  border-radius: 12px;
 }
 
-nav ul {
-    list-style: none;
+.menu-flex h2 {
+  color: #1b5e20;
+  text-align: center;
 }
 
-nav ul li {
-    margin: 8px 0;
+.menu-flex a {
+  text-decoration: none;
+  background-color: #e8f5e9;
+  padding: 10px;
+  border-radius: 8px;
+  color: #1b5e20;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.2s ease;
 }
 
-nav a {
-    text-decoration: none;
-    color: #1b5e20;
-    font-weight: bold;
+.menu-flex a:hover {
+  background-color: #b2dfdb;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* =========================================
-   ENCABEZADO
-========================================= */
+/* ================= HEADER ================= */
 header {
-    text-align: center;
-    background-color: #a8e6cf;
-    padding: 25px;
-    border-radius: 12px;
-    margin-bottom: 20px;
+  text-align: center;
+  background-color: #a8e6cf;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 16px;
 }
 
-h1 {
-    color: #1b5e20;
-    margin-bottom: 5px;
+/* ================= GRID PRINCIPAL ================= */
+main.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
 }
 
-h2 {
-    color: #2e7d32;
-    margin-bottom: 12px;
-}
-
-/* =========================================
-   SECCIONES GENERALES
-========================================= */
 section {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #e8f5e9;
-    border-radius: 10px;
+  background-color: #e8f5e9;
+  padding: 16px;
+  border-radius: 12px;
 }
 
-/* =========================================
-   SECCIÓN QUIÉNES SOMOS
-========================================= */
-#quienes-somos h2 {
-    color: #1b5e20;
-    font-size: 28px;
-    border-bottom: 2px solid #66bb6a;
-    padding-bottom: 8px;
+section h2 {
+  color: #2e7d32;
+  margin-bottom: 10px;
 }
 
-#quienes-somos p {
-    font-size: 17px;
-    color: #2e7d32;
-    margin-bottom: 12px;
+/* ================= GALERÍA (FLEXBOX) ================= */
+.galeria-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
 }
 
-/* =========================================
-   ACTIVIDADES (LISTA)
-========================================= */
-#actividades ul {
-    padding-left: 25px;
-    color: #1b5e20;
+.galeria-flex img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-#actividades li {
-    margin-bottom: 8px;
-    font-size: 17px;
+/* ================= TABLA ================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-/* =========================================
-   TABLA DE EVENTOS
-========================================= */
-#eventos table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
+th,
+td {
+  border: 1px solid #66bb6a;
+  padding: 10px;
+  text-align: center;
 }
 
-#eventos th {
-    background-color: #a5d6a7;
-    padding: 10px;
-    font-size: 18px;
-    text-align: left;
+/* ================= VIDEO ================= */
+iframe {
+  width: 100%;
+  min-height: 320px;
+  border-radius: 10px;
+  border: none;
 }
 
-#eventos td {
-    padding: 10px;
-    border: 1px solid #66bb6a;
-}
-
-#eventos tr:nth-child(even) {
-    background-color: #dff4df;
-}
-
-/* =========================================
-   MULTIMEDIA
-========================================= */
-img {
-    border-radius: 8px;
-    margin-right: 10px;
-}
-
-audio, video, iframe {
-    margin-top: 10px;
-    width: 100%;
-    max-width: 560px;
-    border-radius: 8px;
-}
-
-/* =========================================
-   FORMULARIOS
-========================================= */
+/* ================= FORMULARIO ================= */
 form {
-    margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-label {
-    font-weight: bold;
-    color: #1b5e20;
-}
-
-input, select, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-    margin-bottom: 12px;
-    border: 1px solid #66bb6a;
-    border-radius: 6px;
-    font-size: 16px;
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #81c784;
 }
 
 input[type="submit"] {
-    background-color: #4caf50;
-    color: white;
-    cursor: pointer;
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 6px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
 }
 
-input[type="submit"]:hover {
-    background-color: #43a047;
-}
-
-/* =========================================
-   PIE DE PÁGINA
-========================================= */
+/* ================= FOOTER ================= */
 footer {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 14px;
-    color: #555;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
 }
 
-footer hr {
-    border: none;
-    border-top: 1px solid #ccc;
-    margin-bottom: 15px;
+/* ================================================= */
+/* ================= MEDIA QUERIES ================= */
+/* ================================================= */
+
+/* ===== TABLET ===== */
+@media screen and (min-width: 700px) {
+  main.grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .galeria-flex {
+    flex-direction: row;
+  }
+
+  .galeria-flex img {
+    height: 200px;
+  }
 }
 
-/* =========================================
-   DETALLES
-========================================= */
-b, strong {
-    color: #1b5e20;
+/* ===== DESKTOP ===== */
+@media screen and (min-width: 1024px) {
+
+  /* Layout general */
+  .wrapper {
+    grid-template-columns: 260px 1fr;
+    align-items: start;
+  }
+
+  /* Menú fijo lateral */
+  .menu-flex {
+    position: sticky;
+    top: 16px;
+    height: fit-content;
+  }
+
+  /* Grid avanzado del contenido */
+@media screen and (min-width: 1024px) {
+
+  main.grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "quienes actividades"
+      "temas temas"
+      "formulario eventos"
+      "formulario video";
+    gap: 20px;
+  }
+
+  #quienes-somos {
+    grid-area: quienes;
+  }
+
+  #actividades {
+    grid-area: actividades;
+  }
+
+  #temas-interes {
+    grid-area: temas;
+  }
+
+  #eventos {
+    grid-area: eventos;
+  }
+
+  #formulario {
+    grid-area: formulario;
+  }
+
+  #videos-relacionados {
+    grid-area: video;
+  }
+}
+
 }
